@@ -37,7 +37,11 @@ def two_sum(array , target) :
             return -1
 
 
-output = two_sum([1,2,3],13)
-print(output)
+# output = two_sum([1,2,3],13)
+# print(output)
 
-#  O(n2) complexity 
+#  O(n2) complexity
+
+for i in dir(str):
+    if i[0] != "_":
+        print(i)
