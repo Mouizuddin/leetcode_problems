@@ -1,7 +1,5 @@
-    # 448. Find All Numbers Disappeared in an Array
+'''448. Find All Numbers Disappeared in an Array
 
-
-'''
 Given an array nums of n integers where nums[i] is in the range [1, n], 
 return an array of all the integers in the range [1, n] that do not appear in nums.
 
@@ -25,11 +23,15 @@ range is --->> [1,n] (key solution)
 def solution(array):
     num_len = len(array)
     the_range = set(range(1,num_len+1)) # [1,n]
+    print(f'the range is {the_range}')
     for nums in array:
+        print(f'num in array {nums}')
         if nums in the_range:
             the_range.remove(nums)
-    return list(the_range)
+            print(the_range)
+    print(list(the_range))
 
 
-testing = [1,1]
-print(solution(testing))
+testing = [1,4,5,6]
+solution(testing)
+print('all products'.upper())
