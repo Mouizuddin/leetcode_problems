@@ -32,6 +32,5 @@ def solution(array):
     print(list(the_range))
 
 
-testing = [1,4,5,6]
+testing = [1,2,4]
 solution(testing)
-print('all products'.upper())
