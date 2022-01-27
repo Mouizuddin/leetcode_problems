@@ -11,5 +11,5 @@ def solution(array,target):
         return -1
     return array.index(target)
 
-sol = solution([-1,0,3,5,9,12] , -4)
-print(sol)
+
+solution([-1,0,3,5,9,12] , -4)
